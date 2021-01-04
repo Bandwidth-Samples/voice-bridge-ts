@@ -1,7 +1,7 @@
 {
-  "name": "messaging-send-receive-sms-ts",
+  "name": "voice-bridge-ts",
   "version": "1.0.0",
-  "description": "Bandwidth sample app sending sms text messages",
+  "description": "Bandwidth sample app demonstrating the bridge BXML verb",
   "main": "out/app.js",
   "scripts": {
     "build": "tsc --sourcemap",

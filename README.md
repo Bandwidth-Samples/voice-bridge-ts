@@ -1,4 +1,4 @@
-# Repo Title REPLACE
+# Voice Bridge Node Sample
 <a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW-VMP.png"/></a>
 </div>
 
@@ -6,7 +6,7 @@
 
 <!-- TOC -->
 
-- [Repo Title REPLACE](#repo-title-replace)
+- [Voice Bridge Node Sample](#voice-bridge-node-sample)
 - [Description](#description)
 - [Bandwidth](#bandwidth)
 - [Environmental Variables](#environmental-variables)
@@ -32,9 +32,9 @@ The sample app uses the below environmental variables.
 BANDWIDTH_ACCOUNT_ID                 // Your Bandwidth Account Id
 BANDWIDTH_USERNAME                   // Your Bandwidth API Token
 BANDWIDTH_PASSWORD                   // Your Bandwidth API Secret
-BANDWIDTH_PHONE_NUMBER                // Your The Bandwidth Phone Number
+BANDWIDTH_PHONE_NUMBER               // Your The Bandwidth Phone Number
+MASKED_PHONE_NUMBER                  // A phone number to mask with the BANDWIDTH_PHONE_NUMBER
 BANDWIDTH_VOICE_APPLICATION_ID       // Your Voice Application Id created in the dashboard
-BANDWIDTH_MESSAGING_APPLICATION_ID   // Your Messaging Application Id created in the dashboard
 BASE_URL                             // Your public base url
 PORT                                 // The port number you wish to run the sample on
 ```

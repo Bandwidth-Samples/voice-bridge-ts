@@ -1,5 +1,5 @@
 require('dotenv').config()
-import { Client, ApiController, Response, SpeakSentence, Gather, Ring, Bridge } from '@bandwidth/voice'
+import { Client, ApiController, Response, SpeakSentence, Ring, Bridge } from '@bandwidth/voice'
 import express from 'express'
 
 const app = express()

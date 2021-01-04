@@ -16,13 +16,13 @@
 <!-- /TOC -->
 
 # Description
-A short description of your sample app and its capabilities. 
+This sample app shows how to hide (mask) a phone number through a Bandwidth phone number using Bandwidth's Bridge BXML verb. After setting up your Bandwidth Application to point to the URL running this application, anyone who calls your Bandwidth phone number will be bridged to the masked number without either party members knowing the other's phone number.
 
 # Bandwidth
 
 In order to use the Bandwidth API users need to set up the appropriate application at the [Bandwidth Dashboard](https://dashboard.bandwidth.com/) and create API tokens.
 
-To create an application log into the [Bandwidth Dashboard](https://dashboard.bandwidth.com/) and navigate to the `Applications` tab.  Fill out the **New Application** form selecting the service (Messaging or Voice) that the application will be used for.  All Bandwidth services require publicly accessible Callback URLs, for more information on how to set one up see [Callback URLs](#callback-urls).
+To create an application log into the [Bandwidth Dashboard](https://dashboard.bandwidth.com/) and navigate to the `Applications` tab.  Fill out the **New Application** form selecting the voice service.  All Bandwidth services require publicly accessible Callback URLs, for more information on how to set one up see [Callback URLs](#callback-urls).
 
 For more information about API credentials see [here](https://dev.bandwidth.com/guides/accountCredentials.html#top)
 
@@ -32,8 +32,8 @@ The sample app uses the below environmental variables.
 BANDWIDTH_ACCOUNT_ID                 // Your Bandwidth Account Id
 BANDWIDTH_USERNAME                   // Your Bandwidth API Token
 BANDWIDTH_PASSWORD                   // Your Bandwidth API Secret
-BANDWIDTH_PHONE_NUMBER               // Your The Bandwidth Phone Number
-MASKED_PHONE_NUMBER                  // A phone number to mask with the BANDWIDTH_PHONE_NUMBER
+BANDWIDTH_PHONE_NUMBER               // Your The Bandwidth Phone Number (E164 Format)
+MASKED_PHONE_NUMBER                  // A phone number to mask with the BANDWIDTH_PHONE_NUMBER (E164 Format)
 BANDWIDTH_VOICE_APPLICATION_ID       // Your Voice Application Id created in the dashboard
 BASE_URL                             // Your public base url
 PORT                                 // The port number you wish to run the sample on
@@ -44,8 +44,8 @@ PORT                                 // The port number you wish to run the samp
 For a detailed introduction to Bandwidth Callbacks see https://dev.bandwidth.com/guides/callbacks/callbacks.html
 
 Below are the callback paths:
-* `/callbacks/voiceCallback`
-* `<add other callbacks>`
+* `/callbacks/outbound`
+* `/callbacks/inbound`
 
 ## Ngrok
 

@@ -46,9 +46,7 @@ app.post('/callbacks/inboundCall', async (req, res) => {
     await callsApi.createCall(BW_ACCOUNT_ID, body);
 
     const speakSentence = new Bxml.SpeakSentence('Hold while we connect you.');
-    const ring = new Bxml.Ring({
-        duration: 30
-    });
+    const ring = new Bxml.Ring({ duration: 30 });
     const response = new Bxml.Response([speakSentence, ring]);
             
     res.status(200).send(response.toBxml());
